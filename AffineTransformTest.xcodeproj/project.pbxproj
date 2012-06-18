@@ -14,6 +14,7 @@
 		3143B8BF158EB53300DE84BD /* PRHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3143B8BE158EB53300DE84BD /* PRHAppDelegate.m */; };
 		3143B8C2158EB53300DE84BD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3143B8C0158EB53300DE84BD /* MainMenu.xib */; };
 		3143B8CA158EB66100DE84BD /* PRHTransformedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3143B8C9158EB66100DE84BD /* PRHTransformedView.m */; };
+		3143B8CC158ECE1B00DE84BD /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3143B8CB158ECE1B00DE84BD /* Warnings.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3143B8C1158EB53300DE84BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3143B8C8158EB66100DE84BD /* PRHTransformedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHTransformedView.h; sourceTree = "<group>"; };
 		3143B8C9158EB66100DE84BD /* PRHTransformedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHTransformedView.m; sourceTree = "<group>"; };
+		3143B8CB158ECE1B00DE84BD /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Warnings.xcconfig; path = Warnings/Warnings.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3143B8B7158EB53300DE84BD /* main.m */,
 				3143B8B9158EB53300DE84BD /* AffineTransformTest-Prefix.pch */,
 				3143B8BA158EB53300DE84BD /* Credits.rtf */,
+				3143B8CB158ECE1B00DE84BD /* Warnings.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				3143B8B6158EB53300DE84BD /* InfoPlist.strings in Resources */,
 				3143B8BC158EB53300DE84BD /* Credits.rtf in Resources */,
 				3143B8C2158EB53300DE84BD /* MainMenu.xib in Resources */,
+				3143B8CC158ECE1B00DE84BD /* Warnings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +213,7 @@
 /* Begin XCBuildConfiguration section */
 		3143B8C3158EB53300DE84BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3143B8CB158ECE1B00DE84BD /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -236,6 +241,7 @@
 		};
 		3143B8C4158EB53300DE84BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3143B8CB158ECE1B00DE84BD /* Warnings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
