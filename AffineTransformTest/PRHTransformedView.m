@@ -37,12 +37,25 @@
 
 	CGColorRef blueColor = CGColorCreateGenericRGB(0.0, 0.0, 1.0, 1.0);
 	CGContextSetStrokeColorWithColor(context, blueColor);
-	CGColorRelease(blueColor);
-	CGColorRef whiteColor = CGColorCreateGenericGray(1.0, 1.0);
-	CGContextSetFillColorWithColor(context, whiteColor);
-	CGColorRelease(whiteColor);
-	CGContextAddRect(context, (CGRect){ CGPointZero, { halfWidth / 2.0, halfHeight / 2.0 } });
-	CGContextDrawPath(context, kCGPathFillStroke);
+	CGColorRef purpleColor = CGColorCreateGenericRGB(1.0, 0.0, 1.0, 1.0);
+	CGColorSpaceRef colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+	NSArray *colors = [NSArray arrayWithObjects:(__bridge_transfer id)purpleColor, (__bridge_transfer id)blueColor, nil];
+	const CGFloat locations[2] = { 1.0, 0.0 };
+	CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef) colors, locations);
+	CGColorSpaceRelease(colorSpace);
+
+	CGMutablePathRef path = CGPathCreateMutable();
+	CGPathAddRect(path, /*transform*/ NULL, (CGRect){ CGPointZero, { halfWidth / 2.0, halfHeight / 2.0 } });
+
+	CGContextAddPath(context, path);
+	CGContextStrokePath(context);
+
+	CGContextAddPath(context, path);
+	CGContextClip(context);
+	CGContextDrawLinearGradient(context, gradient, (CGPoint){ 0.0, halfHeight * -0.5 }, (CGPoint){ 0.0, halfHeight * 0.5 }, /*options*/0);
+
+	CGPathRelease(path);
+	CGGradientRelease(gradient);
 }
 
 - (CGFloat) transformA {
