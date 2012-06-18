@@ -1,3 +1,6 @@
 [submodule "Warnings"]
 	path = Warnings
 	url = git://github.com/boredzo/Warnings-xcconfig.git
+[submodule "DDMathParser"]
+	path = DDMathParser
+	url = git://github.com/boredzo/DDMathParser.git
