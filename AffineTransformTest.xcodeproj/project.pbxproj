@@ -13,6 +13,7 @@
 		3143B8BC158EB53300DE84BD /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3143B8BA158EB53300DE84BD /* Credits.rtf */; };
 		3143B8BF158EB53300DE84BD /* PRHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3143B8BE158EB53300DE84BD /* PRHAppDelegate.m */; };
 		3143B8C2158EB53300DE84BD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3143B8C0158EB53300DE84BD /* MainMenu.xib */; };
+		3143B8CA158EB66100DE84BD /* PRHTransformedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3143B8C9158EB66100DE84BD /* PRHTransformedView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,16 @@
 		3143B8AE158EB53300DE84BD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3143B8AF158EB53300DE84BD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3143B8B0158EB53300DE84BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3143B8B3158EB53300DE84BD /* AffineTransformTest-Info.plist */ = {isa = PBXFileReference; path = "AffineTransformTest-Info.plist"; sourceTree = "<group>"; };
+		3143B8B3158EB53300DE84BD /* AffineTransformTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AffineTransformTest-Info.plist"; sourceTree = "<group>"; };
 		3143B8B5158EB53300DE84BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3143B8B7158EB53300DE84BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3143B8B9158EB53300DE84BD /* AffineTransformTest-Prefix.pch */ = {isa = PBXFileReference; path = "AffineTransformTest-Prefix.pch"; sourceTree = "<group>"; };
+		3143B8B9158EB53300DE84BD /* AffineTransformTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AffineTransformTest-Prefix.pch"; sourceTree = "<group>"; };
 		3143B8BB158EB53300DE84BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		3143B8BD158EB53300DE84BD /* PRHAppDelegate.h */ = {isa = PBXFileReference; path = PRHAppDelegate.h; sourceTree = "<group>"; };
+		3143B8BD158EB53300DE84BD /* PRHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRHAppDelegate.h; sourceTree = "<group>"; };
 		3143B8BE158EB53300DE84BD /* PRHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRHAppDelegate.m; sourceTree = "<group>"; };
 		3143B8C1158EB53300DE84BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3143B8C8158EB66100DE84BD /* PRHTransformedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHTransformedView.h; sourceTree = "<group>"; };
+		3143B8C9158EB66100DE84BD /* PRHTransformedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHTransformedView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				3143B8BD158EB53300DE84BD /* PRHAppDelegate.h */,
 				3143B8BE158EB53300DE84BD /* PRHAppDelegate.m */,
+				3143B8C8158EB66100DE84BD /* PRHTransformedView.h */,
+				3143B8C9158EB66100DE84BD /* PRHTransformedView.m */,
 				3143B8C0158EB53300DE84BD /* MainMenu.xib */,
 				3143B8B2158EB53300DE84BD /* Supporting Files */,
 			);
@@ -168,6 +173,7 @@
 			files = (
 				3143B8B8158EB53300DE84BD /* main.m in Sources */,
 				3143B8BF158EB53300DE84BD /* PRHAppDelegate.m in Sources */,
+				3143B8CA158EB66100DE84BD /* PRHTransformedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
